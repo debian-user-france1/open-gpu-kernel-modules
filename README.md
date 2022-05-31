@@ -39,7 +39,7 @@ If cross-compiling, set these variables on the make command line:
 E.g.,
 
     # compile on x86_64 for aarch64
-    make modules -j`nproc`          \
+    make modules -j$(nproc)         \
         TARGET_ARCH=aarch64         \
         CC=aarch64-linux-gnu-gcc    \
         LD=aarch64-linux-gnu-ld     \
